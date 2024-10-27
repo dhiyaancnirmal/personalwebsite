@@ -1,0 +1,36 @@
+.center-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 524px; /* Adjust as needed */
+    height: 299px; /* Adjust as needed */
+    animation: scaleAndRotate 1.4s ease-in-out forwards; /* Applies the scale and rotate animation */
+}
+
+@keyframes scaleAndRotate {
+    0% {
+        transform: scale(0.5) rotate(15deg); /* Start small and tilted */
+        opacity: 0; /* Start transparent */
+    }
+    100% {
+        transform: scale(1) rotate(0deg); /* End at normal size and orientation */
+    }
+}
+
+.background-image {
+    width: 100%; /* Ensures the image covers the box */
+    height: auto; /* Maintains aspect ratio */
+    border: 1px solid black; /* Creates a black outline */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a slight shadow */
+}
+
+.overlay-text {
+    position: absolute; /* Positions text on top of the image */
+    font:900;
+    font-size: x-large;
+}
+
+.centered-text {
+    text-align: center; /* Centers the text */
+}

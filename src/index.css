@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Serpentine';
+  src: url('./fonts/Serpentine Medium.otf') format('opentype'); /* Specify the OTF format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
